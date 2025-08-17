@@ -1,0 +1,156 @@
+@use "/src/sass/base/variables.scss" as *;
+.touch {
+  padding-top: 60px;
+  &__wrapper {
+    margin-top: 60px;
+  }
+  &__img {
+    display: none;
+  }
+  &__fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  &__label {
+    color: $dark;
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    &:nth-child(2){
+      margin-top: 8px;
+    }
+  }
+  &__input {
+    width: 100%;
+    height: 48px;
+    padding: 10px 15px;
+    border-radius: 2px;
+    border: 1px solid #e2e1e5;
+    background: #fff;
+    color: $dark;
+    &:focus {
+      border: none;
+      outline: 1px solid $dark;
+    }
+    &::placeholder {
+      color: $ui-disabled;
+      font-size: 14px;
+    }
+  }
+  &__textarea {
+    width: 100%;
+    height: 132px;
+    padding: 10px 15px;
+    border-radius: 2px;
+    border: 1px solid #e2e1e5;
+    background: #fff;
+    color: $dark;
+    resize: none;
+    &:focus {
+      border: none;
+      outline: 1px solid $dark;
+    }
+    &::placeholder {
+      color: $ui-disabled;
+      font-size: 14px;
+    }
+}
+    &__check-block{
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      a{
+         color: #A22DC6;
+         text-decoration: none;
+         margin-left: 2px;
+      }
+    }
+    &__checkbox{
+      margin-right: 15px;
+      width: 15px;
+      height: 15px;
+    }
+    &__btn{
+      margin-top: 20px;
+    }
+    .flex{
+      &__vase{
+        display: none;
+      }
+    }
+}
+@media screen and (min-width: 768px){
+.touch{
+  &__input{
+    width: 300px;
+    height: 48px;
+  }
+  &__textarea{
+    width: 300px;
+    height: 132px;
+  }
+  .flex{
+display: flex;
+justify-content: space-between;
+  &__vase{
+    display: block;
+  margin-top: 25px;
+  width: 85px;
+  height: 85px;
+}
+}
+}
+}
+@media screen and (min-width: 1200px) {
+  .touch {
+    &__img {
+      display: block;
+      width: 550px;
+      height: 342px;
+      object-fit: cover;
+      box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+    }
+    &__input {
+      width: 300px;
+      height: 48px;
+      color: $dark;
+      padding: 10px 15px;
+      border-radius: 2px;
+      border: 1px solid #e2e1e5;
+      background: #fff;
+
+      &:hover {
+        border: none;
+        outline: 1px solid $dark;
+      }
+      &::placeholder {
+        color: $ui-disabled;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .touch {
+        &__wrapper{
+      display: flex;
+      justify-content: space-between;
+    }
+    &__fieldset{
+      display: flex;
+    }
+    &__correct-pixel{
+      width: 645px;
+    }
+    &__margin{
+      margin-right: 45px;
+    }
+    &__img {
+      width: 573px;
+      height: 356px;
+    }
+  }
+}

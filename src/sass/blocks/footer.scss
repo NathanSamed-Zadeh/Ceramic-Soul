@@ -1,0 +1,183 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.footer {
+  margin-top: 50px;
+  background-color: $dark;
+
+  &__first-block {
+    width: 90%;
+    .title-h3 {
+      color: $light;
+      padding-top: 50px;
+      font-size: 16px;
+      display: flex;
+      justify-content: start;
+    }
+    .footer__paragraph {
+      color: $light;
+      padding-top: 40px;
+    }
+    .footer__input {
+      padding-top: 40px;
+      .footer__input-inp {
+        width: 100%;       height: 48px;
+        padding: 10px 15px;
+        border: none;
+        border-bottom: 1px solid $ui-active;
+        outline: none;
+        background: #fff;
+        color: $light;
+        background-color: $dark;
+        &::placeholder {
+          color: $ui-active;
+        }
+      }
+    }
+  }
+  .footer__check-block {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    color: $light;
+
+    a {
+      color: #a22dc6;
+      text-decoration: none;
+      margin-left: 2px;
+    }
+  }
+  &__checkbox {
+    margin-right: 15px;
+    width: 15px;
+    height: 15px;
+    background-color: $dark;
+  }
+  &__btn {
+    width: 90px;
+    height: 40px;
+    color: $light;
+    border: 1px solid $light;
+    margin-top: 20px;
+  }
+}
+.footer {
+
+  &__second-block {
+    color: $light;
+    width: auto;
+    padding-top: 50px;
+
+    .title-h3 {
+      color: $light;
+
+      font-size: 16px;
+      display: flex;
+      justify-content: start;
+    }
+  }
+  &__twoblocks {
+    padding-top: 40px;
+
+    a {
+      display: block;
+      text-decoration: none;
+      color: $light;
+    }
+  }
+  &__about-us {
+    padding-bottom: 20px;
+  }
+  &__d-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__termscond {
+    padding-top: 40px;
+    a {
+      text-decoration: none;
+      color: $light;
+    }
+  }
+
+}
+.footer{
+  &__third-block{
+    padding-top: 40px;
+  }
+      .title-h3 {
+      color: $light;
+      font-size: 16px;
+      display: flex;
+      justify-content: start;
+    }
+    &__three-icons{
+      a span{
+        color: #fff;
+        width: 24px;
+        height: 24px;
+        padding-right: 10px;
+      }
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    &__copyright{
+      color: $light;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 50px;
+    }
+}
+@media screen and (min-width: 768px){
+
+.footer{
+
+  &__tablet{
+    display: flex;
+    justify-content: space-between;
+  }
+      &__first-block{
+      width: 90%;
+    }
+      &__input{
+        width: 50%;           
+      }
+
+  &__tablet{
+    display: flex;
+    
+  }
+  &__margin{
+    margin-right: 20px;
+  }
+
+  &__information {
+    padding-top: 0px;
+  }
+    &__third-block{
+    padding: 50px;
+  }
+}
+}
+
+@media screen and (min-width: 1200px){
+  .footer{
+    &__first-block{
+      width: 100%;
+    }
+        &__one-ryad{
+  display: flex;
+  justify-content: space-around;
+    }
+          &__input{
+        width: 100%;           
+      }
+
+      &__discover{
+        padding-right: 66px;
+      }
+            &__shopping{
+        padding-right: 66px;
+      }
+  }
+}
